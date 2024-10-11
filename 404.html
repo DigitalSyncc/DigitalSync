@@ -1,0 +1,95 @@
+<!--
+    DigitalSync©️
+    Copyright (c) 2024 DigitalSync©️
+    
+    This project is licensed under a Custom License.
+    Please see the LICENSE file for details on usage restrictions.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalSync©️</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-png" href="/images/DigitalSync.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
+    </style>
+</head>
+
+<!-- Body -->
+<body class="dark-theme">
+    <header class="navbar">
+        <div class="logo">
+            <a href="https://digitalsync.org">DigitalSync©️</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="error-page">
+        <div class="icon">
+            <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <h1>404</h1>
+        <h2>Oops! Page Not Found</h2>
+        <p>It seems like the page you're looking for doesn't exist.</p>
+    </div>
+
+    <!-- Footer -->
+    <section id="footer" class="footer">
+        <footer class="footer">
+            <div class="social-links">
+                <h2>Our Social Links</h2>
+                <a href="https://www.youtube.com/@DigitalSyncc" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://x.com/DigitalSyncC" target="_blank" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                  </svg>
+                <a href="https://discord.gg/digitalsync" target="_blank" class="social-icon">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <p>2024 DigitalSync&copy;. All rights reserved.</p>
+            </div>
+        </footer>    
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.services-section, .developers-section, .about-section');
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.style.opacity = 1; 
+                    section.classList.add('fade-in');
+                }, index * 500); 
+            });
+        });
+
+        document.querySelectorAll('.animate').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

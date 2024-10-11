@@ -1,0 +1,30 @@
+{
+    "TeamMember1":{
+        "name": "Alex",
+        "role": "CEO",
+        "image":"https://cdn.discordapp.com/avatars/797909271043506208/a_5e1091ca0195430836fc1a0c7a8fedd7.gif?size=1024&width=0&height=256"
+
+    },
+    "TeamMember2":{
+        "name": "Aggelos",
+        "role": "CEO",
+
+        "image":"https://cdn.discordapp.com/avatars/948604966820515902/a_6d7c3f6e17eb83a29e5bb15fa79376c4.gif?size=1024&width=0&height=256" 
+
+    },
+
+    "TeamMember3":{
+        "name": "Themis",
+        "role": "CO CEO",
+
+        "image":"https://cdn.discordapp.com/avatars/951507151342420069/10f603156cce4e3ea5ee30281e6e0cb9.png?size=1024&format=webp&quality=lossless&width=0&height=256" 
+
+    },
+    "TeamMember4":{
+        "name": "Nikos",
+        "role": "CO CEO",
+
+        "image":"https://cdn.discordapp.com/avatars/1255625502094266501/a_04ef40d5e6fa47e5d52fa5146cddf041.gif?size=1024&width=0&height=256" 
+
+    } 
+}
